@@ -7,6 +7,17 @@ interface ILogger {
     error(message: string): void
 }
 
+interface LoggerA {
+    debug(message: string): void
+    warn(message: string): void
+    error(message: string): void
+}
+
+interface LoggerB {
+    info(message: string): void
+    error(message: string): void
+}
+
 class ProductionLogger implements ILogger {
     info(message: string): void {
         
