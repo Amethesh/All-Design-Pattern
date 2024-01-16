@@ -5,7 +5,7 @@ interface CheckBox {
     check():void
 }
 
-interface UIFactory {
+export interface UIFactory {
     CreateButton(): Button
     CreateCheckBox(): CheckBox
 }
@@ -19,7 +19,7 @@ class DarkButton implements Button {
 
 class DarkCheckBox implements CheckBox {
     check(): void {
-        console.log("Displaying a dark CheckBox.");
+        console.log("Checked a dark CheckBox.");
     }
 }
 
@@ -31,7 +31,7 @@ class LightButton implements Button {
 
 class LightCheckBox implements CheckBox {
     check(): void {
-        console.log("Displaying a light CheckBox.");
+        console.log("Checked a light CheckBox.");
     }
 }
 
